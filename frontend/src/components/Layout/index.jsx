@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 
 export const Layout = ({ children }) => {
   return (
-    <Box component="header" sx={{ height: "100%" }}>
+    <Box component="div" sx={{ height: "10vh" }}>
       <TopNav />
       {children}
       <Footer />
