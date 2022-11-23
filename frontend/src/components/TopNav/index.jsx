@@ -1,6 +1,5 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
-import Tooltip from "@mui/material/Tooltip";
 import Button from "@mui/material/Button";
 import ButtonGroup from "@mui/material/ButtonGroup";
 import Grid from "@mui/material/Grid";
@@ -29,8 +28,7 @@ export class TopNav extends React.Component {
               <Button
                 sx={{
                   color: "white",
-                  width: "5vw",
-                  height: "100%",
+                  width: "auto",
                 }}
               >
                 Home
@@ -38,7 +36,7 @@ export class TopNav extends React.Component {
               <Button
                 sx={{
                   color: "white",
-                  width: "5vw",
+                  width: "auto",
                 }}
               >
                 Item1
@@ -46,7 +44,7 @@ export class TopNav extends React.Component {
               <Button
                 sx={{
                   color: "white",
-                  width: "5vw",
+                  width: "auto",
                 }}
               >
                 Item2
@@ -54,7 +52,7 @@ export class TopNav extends React.Component {
               <Button
                 sx={{
                   color: "white",
-                  width: "5vw",
+                  width: "auto",
                 }}
               >
                 Item3
@@ -71,7 +69,7 @@ export class TopNav extends React.Component {
               alignItems: "center",
             }}
           >
-            <Avatar sx={{ width: "3vw", height: "5vh", margin: "auto" }}>
+            <Avatar sx={{ margin: "auto" }}>
               <PersonIcon />
             </Avatar>
           </Grid>

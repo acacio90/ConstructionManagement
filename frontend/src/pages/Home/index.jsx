@@ -8,18 +8,6 @@ import { Layout } from "../../components";
 const theme = createTheme();
 export class Home extends React.Component {
   render() {
-    return (
-      <Layout>
-        <Container
-          maxWidth="xl"
-          sx={{
-            height: "82vh",
-            marginTop: "8vh",
-          }}
-        >
-          <span>Conteúdo</span>
-        </Container>
-      </Layout>
-    );
+    return <Layout>Teste</Layout>;
   }
 }

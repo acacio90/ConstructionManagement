@@ -4,9 +4,11 @@ import Box from "@mui/material/Box";
 
 export const Layout = ({ children }) => {
   return (
-    <Box component="div" sx={{ height: "10vh" }}>
+    <Box sx={{ height: "100vh", display: "flex" }}>
       <TopNav />
-      {children}
+      <div style={{ marginTop: "8vh", marginBottom: "10vh", width: "100vw" }}>
+        {children}
+      </div>
       <Footer />
     </Box>
   );
