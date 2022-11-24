@@ -6,8 +6,14 @@ import ListItem from "@mui/material/ListItem";
 import Divider from "@mui/material/Divider";
 import ListItemText from "@mui/material/ListItemText";
 import Grid from "@mui/material/Grid";
-
+import Button from "@mui/material/Button";
+import AddIcon from "@mui/icons-material/Add";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { Layout } from "../../components";
+import { Avatar } from "@mui/material";
+import { Link } from "react-router-dom";
+
+import { SHOWFUNCTIONARY } from "../../routes/routes";
 
 const theme = createTheme();
 export class IndexFunctionary extends React.Component {
@@ -79,10 +85,7 @@ export class IndexFunctionary extends React.Component {
   render() {
     return (
       <Layout>
-        <Grid
-          container
-          sx={{ height: "auto", marginTop: "2%", marginBottom: "2%" }}
-        >
+        <Grid container sx={{ height: "auto", marginBottom: "2%" }}>
           <Grid item xs={2} />
           <Grid item xs={8}>
             <div
@@ -98,7 +101,6 @@ export class IndexFunctionary extends React.Component {
                 component="h5"
                 variant="h2"
                 sx={{
-                  marginTop: "normal",
                   color: "white",
                   marginLeft: "auto",
                   marginRight: "auto",
@@ -111,28 +113,76 @@ export class IndexFunctionary extends React.Component {
               {this.functionary.map((functionary) => (
                 <>
                   <ListItem>
-                    <ListItemText
-                      primary={functionary.name}
-                      secondary={
-                        <React.Fragment>
-                          <Typography
-                            sx={{ display: "inline" }}
-                            component="span"
-                            variant="body2"
-                            color="text.primary"
+                    <Grid container>
+                      <Grid
+                        item
+                        xs={11}
+                        component={Link}
+                        to={SHOWFUNCTIONARY}
+                        style={{ textDecoration: "none" }}
+                      >
+                        <ListItemText
+                          primary={
+                            <React.Fragment>
+                              <Typography
+                                sx={{ display: "inline" }}
+                                variant="h6"
+                                color="text.primary"
+                              >
+                                {functionary.name}
+                              </Typography>
+                            </React.Fragment>
+                          }
+                          secondary={
+                            <React.Fragment>
+                              <Typography
+                                sx={{ display: "inline" }}
+                                component="span"
+                                variant="body2"
+                                color="text.primary"
+                              >
+                                {functionary.contact}
+                              </Typography>
+                            </React.Fragment>
+                          }
+                          sx={{ paddingLeft: "1vw" }}
+                        />
+                      </Grid>
+                      <Grid
+                        item
+                        xs={1}
+                        sx={{ display: "flex", alignItems: "center" }}
+                      >
+                        <Button sx={{ margin: "auto" }}>
+                          <Avatar
+                            sx={{
+                              bgcolor: "#262842",
+                            }}
                           >
-                            {functionary.contact}
-                          </Typography>
-                        </React.Fragment>
-                      }
-                    />
+                            <DeleteIcon />
+                          </Avatar>
+                        </Button>
+                      </Grid>
+                    </Grid>
                   </ListItem>
                   <Divider />
                 </>
               ))}
             </List>
           </Grid>
-          <Grid item xs={2}></Grid>
+          <Grid item xs={2}>
+            <Button>
+              <Avatar
+                sx={{
+                  top: "85vh",
+                  bgcolor: "#262842",
+                  position: "fixed",
+                }}
+              >
+                <AddIcon />
+              </Avatar>
+            </Button>
+          </Grid>
         </Grid>
       </Layout>
     );

@@ -35,7 +35,6 @@ export class TopNav extends React.Component {
               <Button
                 variant="contained"
                 sx={{
-                  color: "white",
                   width: "auto",
                   height: "100%",
                 }}
@@ -44,7 +43,7 @@ export class TopNav extends React.Component {
                   variant="h6"
                   sx={{
                     marginTop: "normal",
-                    color: "white",
+                    color: "#D5D7F2",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
@@ -57,7 +56,6 @@ export class TopNav extends React.Component {
               <Button
                 variant="contained"
                 sx={{
-                  color: "white",
                   width: "auto",
                   height: "100%",
                 }}
@@ -66,7 +64,7 @@ export class TopNav extends React.Component {
                   variant="h6"
                   sx={{
                     marginTop: "normal",
-                    color: "white",
+                    color: "#D5D7F2",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
@@ -79,7 +77,6 @@ export class TopNav extends React.Component {
               <Button
                 variant="contained"
                 sx={{
-                  color: "white",
                   width: "auto",
                   height: "100%",
                 }}
@@ -88,7 +85,7 @@ export class TopNav extends React.Component {
                   variant="h6"
                   sx={{
                     marginTop: "normal",
-                    color: "white",
+                    color: "#D5D7F2",
                     marginLeft: "auto",
                     marginRight: "auto",
                   }}
@@ -108,9 +105,11 @@ export class TopNav extends React.Component {
               alignItems: "center",
             }}
           >
-            <Avatar sx={{ margin: "auto" }}>
-              <PersonIcon />
-            </Avatar>
+            <Button sx={{ margin: "auto" }}>
+              <Avatar sx={{ bgcolor: "#262842" }}>
+                <PersonIcon />
+              </Avatar>
+            </Button>
           </Grid>
         </Grid>
       </AppBar>

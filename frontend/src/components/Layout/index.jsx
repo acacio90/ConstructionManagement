@@ -12,6 +12,7 @@ export const Layout = ({ children }) => {
           marginBottom: "10vh",
           width: "100vw",
           backgroundColor: "#D5D7F2",
+          paddingTop: "1vh",
         }}
       >
         {children}

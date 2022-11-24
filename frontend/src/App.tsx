@@ -1,8 +1,14 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import { SIGNIN, HOME, INDEXFUNCTIONARY } from "./routes/routes";
-import { SignIn, Home, IndexFunctionary } from "./pages";
+import {
+  SIGNIN,
+  HOME,
+  INDEXFUNCTIONARY,
+  SHOWFUNCTIONARY,
+} from "./routes/routes";
+
+import { SignIn, Home, IndexFunctionary, ShowFunctionary } from "./pages";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -27,6 +33,7 @@ function App() {
           <Route path={HOME} element={<Home />} />;
           <Route path={SIGNIN} element={<SignIn />} />;
           <Route path={INDEXFUNCTIONARY} element={<IndexFunctionary />} />;
+          <Route path={SHOWFUNCTIONARY} element={<ShowFunctionary />} />;
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
