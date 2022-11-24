@@ -12,107 +12,19 @@ import { HOME, INDEXFUNCTIONARY } from "../../routes/routes";
 export class TopNav extends React.Component {
   render() {
     return (
-      <AppBar
-        className="sdfsaf"
-        sx={{
-          height: "8vh",
+      <div
+        style={{
           display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          minHeight: "40px",
+          justifyContent: "space-between",
+          width: "100vw",
+          height: "8vh",
+          position: "fixed",
+          backgroundColor: "black",
         }}
       >
-        <Grid container sx={{ width: "100%", height: "100%" }}>
-          <Grid
-            item
-            xs={10}
-            sx={{
-              width: "100%",
-              height: "100%",
-            }}
-          >
-            <Link href={HOME}>
-              <Button
-                variant="contained"
-                sx={{
-                  width: "auto",
-                  height: "100%",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    marginTop: "normal",
-                    color: "#D5D7F2",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  }}
-                >
-                  Home
-                </Typography>
-              </Button>
-            </Link>
-            <Link href={INDEXFUNCTIONARY}>
-              <Button
-                variant="contained"
-                sx={{
-                  width: "auto",
-                  height: "100%",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    marginTop: "normal",
-                    color: "#D5D7F2",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  }}
-                >
-                  Funcionários
-                </Typography>
-              </Button>
-            </Link>
-            <Link href="#">
-              <Button
-                variant="contained"
-                sx={{
-                  width: "auto",
-                  height: "100%",
-                }}
-              >
-                <Typography
-                  variant="h6"
-                  sx={{
-                    marginTop: "normal",
-                    color: "#D5D7F2",
-                    marginLeft: "auto",
-                    marginRight: "auto",
-                  }}
-                >
-                  Orçamentos
-                </Typography>
-              </Button>
-            </Link>
-          </Grid>
-          <Grid
-            item
-            xs={2}
-            sx={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <Button sx={{ margin: "auto" }}>
-              <Avatar sx={{ bgcolor: "#262842" }}>
-                <PersonIcon />
-              </Avatar>
-            </Button>
-          </Grid>
-        </Grid>
-      </AppBar>
+        <div style={{ backgroundColor: "black", height: "100%" }}>ewdfesg</div>
+        <div style={{ backgroundColor: "white", height: "100%" }}>dfgsdfg</div>
+      </div>
     );
   }
 }

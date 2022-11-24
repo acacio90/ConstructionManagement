@@ -4,15 +4,22 @@ import Box from "@mui/material/Box";
 
 export const Layout = ({ children }) => {
   return (
-    <Box sx={{ height: "auto", display: "flex", minHeight: "100vh" }}>
+    <Box
+      sx={{
+        height: "auto",
+        display: "block",
+        minHeight: "100vh",
+        width: "100vw",
+        bgcolor: "black",
+      }}
+    >
       <TopNav />
       <div
         style={{
-          marginTop: "8vh",
-          marginBottom: "10vh",
-          width: "100vw",
+          width: "100%",
           backgroundColor: "#D5D7F2",
-          paddingTop: "1vh",
+          paddingTop: "8vh",
+          paddingBottom: "10vh",
         }}
       >
         {children}
