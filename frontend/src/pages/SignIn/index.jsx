@@ -37,7 +37,7 @@ export class SignIn extends React.Component {
                   padding: "2vw",
                 }}
               >
-                <Avatar sx={{ m: 1, bgcolor: "black" }}>
+                <Avatar sx={{ m: 1, bgcolor: "#15143D" }}>
                   <LockOutlinedIcon />
                 </Avatar>
                 <Typography

@@ -1,10 +1,13 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
-import ButtonGroup from "@mui/material/ButtonGroup";
 import Grid from "@mui/material/Grid";
 import Avatar from "@mui/material/Avatar";
 import PersonIcon from "@mui/icons-material/Person";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
+
+import { HOME, INDEXFUNCTIONARY } from "../../routes/routes";
 
 export class TopNav extends React.Component {
   render() {
@@ -16,52 +19,88 @@ export class TopNav extends React.Component {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
+          minHeight: "40px",
         }}
       >
         <Grid container sx={{ width: "100%", height: "100%" }}>
-          <Grid item xs={11}>
-            <ButtonGroup
-              variant="contained"
-              aria-label="text button group"
-              sx={{ width: "100%", height: "100%" }}
-            >
+          <Grid
+            item
+            xs={10}
+            sx={{
+              width: "100%",
+              height: "100%",
+            }}
+          >
+            <Link href={HOME}>
               <Button
+                variant="contained"
                 sx={{
                   color: "white",
                   width: "auto",
+                  height: "100%",
                 }}
               >
-                Home
+                <Typography
+                  variant="h6"
+                  sx={{
+                    marginTop: "normal",
+                    color: "white",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  Home
+                </Typography>
               </Button>
+            </Link>
+            <Link href={INDEXFUNCTIONARY}>
               <Button
+                variant="contained"
                 sx={{
                   color: "white",
                   width: "auto",
+                  height: "100%",
                 }}
               >
-                Item1
+                <Typography
+                  variant="h6"
+                  sx={{
+                    marginTop: "normal",
+                    color: "white",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  Funcionários
+                </Typography>
               </Button>
+            </Link>
+            <Link href="#">
               <Button
+                variant="contained"
                 sx={{
                   color: "white",
                   width: "auto",
+                  height: "100%",
                 }}
               >
-                Item2
+                <Typography
+                  variant="h6"
+                  sx={{
+                    marginTop: "normal",
+                    color: "white",
+                    marginLeft: "auto",
+                    marginRight: "auto",
+                  }}
+                >
+                  Orçamentos
+                </Typography>
               </Button>
-              <Button
-                sx={{
-                  color: "white",
-                  width: "auto",
-                }}
-              >
-                Item3
-              </Button>
-            </ButtonGroup>
+            </Link>
           </Grid>
           <Grid
             item
-            xs={1}
+            xs={2}
             sx={{
               width: "100%",
               height: "100%",

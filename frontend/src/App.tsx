@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
-import { SIGNIN, HOME } from "./routes/routes";
-import { SignIn, Home } from "./pages";
+import { SIGNIN, HOME, INDEXFUNCTIONARY } from "./routes/routes";
+import { SignIn, Home, IndexFunctionary } from "./pages";
 
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { CssBaseline } from "@mui/material";
@@ -10,10 +10,10 @@ import { CssBaseline } from "@mui/material";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#18181B",
+      main: "#262842",
     },
     secondary: {
-      main: "#11cb5f",
+      main: "#262842",
     },
   },
 });
@@ -26,6 +26,7 @@ function App() {
         <Routes>
           <Route path={HOME} element={<Home />} />;
           <Route path={SIGNIN} element={<SignIn />} />;
+          <Route path={INDEXFUNCTIONARY} element={<IndexFunctionary />} />;
         </Routes>
       </BrowserRouter>
     </ThemeProvider>
