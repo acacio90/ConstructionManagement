@@ -174,7 +174,7 @@ export class IndexFunctionary extends React.Component {
             <Button>
               <Avatar
                 sx={{
-                  top: "85vh",
+                  bottom: "12vh",
                   bgcolor: "#262842",
                   position: "fixed",
                 }}

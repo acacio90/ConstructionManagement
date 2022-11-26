@@ -6,24 +6,30 @@ import Grid from "@mui/material/Grid";
 export class Footer extends React.Component {
   render() {
     return (
-      <AppBar
-        className="footer"
-        sx={{ height: "10vh", top: "auto", bottom: "0" }}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          position: "fixed",
+          width: "100vw",
+          height: "10vh",
+          backgroundColor: "blue",
+          top: "auto",
+          bottom: 0,
+        }}
       >
-        <Grid container sx={{ width: "100%", height: "100%" }}>
-          <Grid item xs={10} />
-          <Grid
-            item
-            xs={2}
-            sx={{
-              display: "flex",
-              alignItems: "center",
-            }}
-          >
-            <Typography sx={{ margin: "auto" }}>Logoooo</Typography>
-          </Grid>
-        </Grid>
-      </AppBar>
+        <div
+          style={{
+            width: "10vw",
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "auto",
+            marginBottom: "auto",
+          }}
+        >
+          weeds
+        </div>
+      </div>
     );
   }
 }

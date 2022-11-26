@@ -19,10 +19,10 @@ export class TopNav extends React.Component {
           width: "100vw",
           height: "8vh",
           position: "fixed",
-          backgroundColor: "black",
+          backgroundColor: "#262842",
         }}
       >
-        <div style={{ backgroundColor: "black", height: "100%" }}>ewdfesg</div>
+        <div></div>
         <div style={{ backgroundColor: "white", height: "100%" }}>dfgsdfg</div>
       </div>
     );
